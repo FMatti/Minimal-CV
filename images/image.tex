@@ -1,0 +1,32 @@
+\begin{tikzpicture}
+
+    \fill[black!10!white] (-12.3, -16.7) rectangle (12.3, 16.7);
+    
+    % Blazer
+    \fill[black] (-12.3, -16.7) -- (-12.3, -7.5) -- (-5.5, -4.5) -- (5.5, -4.5) -- (12.3, -7.5) -- (12.3, -16.7) -- cycle;
+
+    % Shirt
+    \fill[white] (-2.5, -16.7) -- (-3.2, -10.5) -- (0.0, -6.5) -- (3.2, -10.5) -- (2.5, -16.7) -- cycle;
+
+    % Neck
+    \fill[skincolor] (-3.6, -7.5) -- (-3.3, -1.5) -- (3.3, -1.5) -- (3.6, -7.5) -- cycle;
+
+    % Head
+    \fill[skincolor] (0.0, 5.0) ellipse (6 and 8);
+
+    % Ears
+    \fill[skincolor, rotate around={10:(-6.25, 4.5)}] (-6.25, 4.5) ellipse (1 and 2.5);
+    \fill[skincolor, rotate around={-10:(6.25, 4.5)}] (6.25, 4.5) ellipse (1 and 2.5);
+    
+    % Hair
+    \fill[black] (5.2, 4.0) -- (5.6, 3.9) -- (5.6, 4.5) to[out=70, in=0, looseness=1.4] (0.0, 13.0) to[out=180, in=110, looseness=1.4] (-5.6, 4.5) -- (-5.6, 3.9) -- (-5.2, 4.0) -- (-5.2, 8.5) to[out=340, in=200] (5.2, 8.5) -- cycle;
+    
+    % Tie
+    \fill[flagblue] (-2.2, -16.7) -- (-0.6, -8.0) -- (0.6, -8.0) -- (2.2, -16.7) -- cycle;
+    \fill[flagblue] (0.0, -8.0) circle (1.5);
+
+    % Collar
+    \fill[white] (-5.8, -4.5) -- (-3.5, -3.0) -- (0.0, -6.5) -- (-3.6, -10.5) -- cycle;
+    \fill[white] (5.8, -4.5) -- (3.5, -3.0) -- (0.0, -6.5) -- (3.6, -10.5) -- cycle;
+
+\end{tikzpicture}
