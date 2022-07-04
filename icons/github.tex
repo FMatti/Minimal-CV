@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+
+    % Background
+    \fill[black] (0, 0) circle (7);
+
+    % Foundation
+    \fill[white] (-3.2, -5.3) rectangle (3.2, -4.7);
+
+    % Logo
+    \fill[white] (1.7, -4.3) -- (-1.7, -4.3) to[out=90, in=270] (-1.675, -4.05)
+                                             to[out=190, in=330] (-3.6, -3.8)
+                                             to[out=150, in=330] (-4.6, -2.35) % Tail
+                                             to[out=150, in=280] (-5.0, -1.9) % Tail
+                                             to[out=20, in=140] (-4.0, -2.1) % Tail
+                                             to[out=320, in=160] (-3.0, -3.2) % Tail
+                                             to[out=340, in=210] (-1.7, -3.1) % Tail
+                                             to[out=80, in=230] (-1.25, -2.2) % Shoulder (left)
+                                             to[out=180, in=230, looseness=1.15] (-3.6, 3.1) % Cheek (left)
+                                             to[out=110, in=250] (-3.5, 4.9) % Ear (left)
+                                             to[out=340, in=130] (-1.8, 4.1) % Ear (left)
+                                             to[out=15, in=165] (1.8, 4.1) % Top
+                                             to[out=50, in=200] (3.5, 4.9) % Ear (right)
+                                             to[out=290, in=70] (3.6, 3.1) % Ear (right)
+                                             to[out=310, in=0, looseness=1.15] (1.25, -2.2) % Cheek (right)
+                                             to[out=310, in=100] (1.7, -3.1) % Shoulder (right)
+                                             -- cycle;
+
+\end{tikzpicture}

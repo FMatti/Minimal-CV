@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+    
+    % Background
+    \fill[black] (0, 0) circle (7);
+
+    % i-base
+    \fill[white] (-4.0, -4.0) rectangle (-2.3, 1.2);
+
+    % i-dot
+    \fill[white] (-3.15, 3.2) circle (1.0);
+
+    % n
+    \fill[white] (-1.2, -4.0) -- (-1.2, 1.2) -- (0.5, 1.2) -- (0.5, 0.5)
+                 to[out=50, in=100, looseness=1.3] (4.0, -0.5)
+                 -- (4.0, -4.0) -- (2.3, -4.0) -- (2.3, -0.7) 
+                 to[out=100, in=80, looseness=1.1] (0.5, -0.8) -- (0.5, -4.0) -- cycle;
+
+\end{tikzpicture}
