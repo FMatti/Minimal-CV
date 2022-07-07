@@ -1,21 +1,6 @@
 \documentclass[11pt]{article}
 
 
-% -- Languages
-
-\newif\ifen
-\newif\ifde
-
-% Use \en{Text} for english version text and \de{Text} for german version text
-\newcommand{\en}[1]{\ifen#1\fi}
-\newcommand{\de}[1]{\ifde#1\fi}
-
-% Uncomment for english version
-\entrue
-
-% Uncomment for german version
-%\detrue
-
 % -- Color scheme
 
 % Color package
@@ -101,7 +86,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 % Custom font commands
-\newcommand{\header}[2]{\uppercase{\textbf{\fontsize{30}{100}{\lsstyle{#1 \hspace{3pt} #2}}}}}
+\newcommand{\header}[3]{\uppercase{\textbf{\fontsize{30}{100}{\lsstyle{#1 \hspace{3pt} #2 \hspace{3pt} #3}}}}}
 \newcommand{\titlefont}[1]{\uppercase{\textbf{\Large{#1}}}}
 
 
@@ -141,16 +126,15 @@
 
     \color{white}
 
-    \header{Fabio}{Matti}
+    \header{Carl}{F.}{Gauss}
 
     \vspace{-7px}
     \begin{tikzpicture}
-        \draw[fill=white] (-6.0, -0.01) rectangle (6.0, 0.01);
+        \draw[fill=white] (-5.0, -0.01) rectangle (5.0, 0.01);
     \end{tikzpicture}
     \vspace{5px}
 
-    \en{\titlefont{Computational Science and Engineering}}
-    \de{\titlefont{Stellenbezeichnung oder Firmenname}}
+    \titlefont{The foremost of mathematicians}
 }
 
 
@@ -173,65 +157,63 @@
 
         \multicolumn{2}{@{}c@{}}{\scalebox{0.25}{\input{images/image.tex}}} \\ \mediumspace
 
-        & \titlefont{\en{Contact}\de{Kontakt}} \\ \hline \mediumspace
+        & \titlefont{Contact} \\ \hline \mediumspace
 
         \multirow{4}{*}{\scalebox{0.075}{\input{icons/address.tex}}}
-            & \textbf{\en{Address}\de{Adresse}} \\
-                %& Bürgstrasse 56 \\
-                %& 3700 Spiez \\
-                & Route Cantonale 99A \\
-                & 1025 St-Sulpice \\
+            & \textbf{Address} \\
+                & Göttingen \\
+                & Kingdom of Hanover \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/phone.tex}}}
-            & \textbf{\en{Phone}\de{Telefon}} \\
-                & \href{tel:+41793211310}{+41 79 321 13 10} \\
+            & \textbf{Phone} \\
+                & \href{tel:+4901234567891}{+49 012 3456-7891} \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/email.tex}}}
             & \textbf{E-Mail} \\
-                & \href{mailto:fabio.matti@epfl.ch}{fabio.matti@epfl.ch} \\
+                & \href{mailto:carl.gauss@uni-goe.de}{carl.gauss@uni-goe.de} \\
                 & \largespace
 
-        & \titlefont{\en{Personal}\de{Persönliches}} \\ \hline \mediumspace
+        & \titlefont{Personal} \\ \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/birthday.tex}}}
-            & \textbf{\en{Date of Birth}\de{Geburtsdatum}} \\
-                & 30/08/1998 \\
+            & \textbf{Date of Birth} \\
+                & 30/04/1777 \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/nationality.tex}}}
-            & \textbf{\en{Nationality}\de{Nationalität}} \\
-                & \en{Swiss}\de{Schweiz} \\
+            & \textbf{Nationality} \\
+                & German \\
                 & \largespace
 
-        & \titlefont{\en{Platforms}\de{Platformen}} \\ \hline \mediumspace
+        & \titlefont{Platforms} \\ \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/github.tex}}}
             & \textbf{GitHub} \\
-                & \href{https://github.com/FMatti}{FMatti} \\
+                & \href{https://github.com/CFGauss}{CFGauss} \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/linkedin.tex}}}
             & \textbf{LinkedIn} \\
-                & \href{https://ch.linkedin.com/in/fabio-matti-NOTAVAILABLE}{Fabio Matti} \\
+                & \href{https://ch.linkedin.com/in/carl-friedrich-gauss}{Carl Gauss} \\
                 & \largespace
 
-        & \titlefont{\en{Languages}\de{Sprachen}} \\ \hline \mediumspace
+        & \titlefont{Languages} \\ \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{flags/germany.tex}}}
-            & \textbf{\en{German}\de{Deutsch}} \\
-                & \en{Native}\de{Muttersprache} \\
+            & \textbf{German} \\
+                & Native \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{flags/britain.tex}}}
-            & \textbf{\en{English}\de{Englisch}} \\
-                & \en{Fluent}\de{Ausgezeichnet} (CEFR: C2) \\
+            & \textbf{English} \\
+                & Fluent \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{flags/france.tex}}}
-            & \textbf{\en{French}\de{Französisch}} \\
-                & \en{Competent}\de{Sehr gut} (CEFR: C1)
+            & \textbf{French} \\
+                & Fluent
 
     \end{tabular}
 }
@@ -256,102 +238,73 @@
 
     \begin{tabular}{>{\footnotesize}rl}
 
-        & \titlefont{\en{Education}\de{Bildungsweg}} \\ \hline \mediumspace
+        & \titlefont{Education} \\ \hline \mediumspace
 
-        \en{Since}\de{Seit} 09/2021
-            & \en{\textbf{EPFL, Master's studies}}
-            \de{\textbf{EPFL, Masterstudium}} \\
-            & Computational Science and Engineering \\
+        02/1798 - 09/1799
+            & \textbf{University of Helmstedt} \\
+            & Doctoral dissertation \\
+            & Discussion of fundamental theorem of algebra \\
             & \smallspace
 
-        09/2018 - 07/2021
-            & \en{\textbf{University of Bern, Bachelor of Science}}
-            \de{\textbf{Universität Bern, Bachelor of Science}}\\
-            & \en{Major: Physics (120 ECTS, GPA: 5.80)}
-            \de{Major: Physik (120 ECTS, Note: 5.80)}\\
-            & \en{Minor: Mathematics (71 ECTS, GPA: 5.68)}
-            \de{Minor: Mathematik (71 ECTS, Note: 5.68)} \\
-            & \en{Thesis: ML in photoacoustics (Grade: 6.0)}
-            \de{Thesis: Supervised learning (Note: 6.0)} \\
+        04/1795 - 02/1798
+            & \textbf{University of Göttingen} \\
+            & Study of Mathematics \\
+            & Construction of regular 17-gon (ruler/compass) \\
             & \smallspace
 
-        08/2014 - 06/2017
-            & \textbf{Gymnasium Thun, Matura} \\
-            & \en{Bilingual Matura in German and English}
-            \de{Zweisprachige Matura in Deutsch und Englisch} \\
-            & \en{Focus: Physics and applied Mathematics}
-            \de{Fokus: Physik und angewandte Mathematik} \\
+        04/1788 - 04/1795
+            & \textbf{Gymnasium Brunswick}\\
+            & High German and Latin \\
+            & Stipend from the Duke of Brunswick \\
+            & \smallspace
+
+        & \titlefont{Work Expericence} \\ \hline \mediumspace
+
+        Since 02/1807
+            & \textbf{Astronomical Observatory in Göttingen} \\
+            & Full professor of astronomy \\
+            & Director of the observatory \\
             & \largespace
 
-        & \titlefont{\en{Work Expericence}} \\ \hline \mediumspace
-
-        07/2022 - 09/2022
-                    & \textbf{Omnisens S.A., Morges} \\
-                    & \textbf{Machine learning internship} \\
-                    & Anomaly classification in fiber optic sensing \\
-                    & Design of efficient data reduction methods \\
-                    & \largespace
-
-        & \titlefont{\en{Military Service}\de{Militärdienst}} \\ \hline \mediumspace
-
-        \en{Since}\de{Seit} 08/2019
-            & \en{\textbf{NBC Staff officer in the Airfield Command 13}}
-            \de{\textbf{ABC Stabsoffizier im Flugplatzkommando 13}} \\
-            & \en{Leadership assistant of battalion commander} \\
-            & \en{In charge of NBC instruction of 700 soldiers}
-            \de{Zuständig für ABC Ausbildung von 700 Soldaten} \\
-            & \smallspace
-        03/2018 - 10/2018
-            & \en{\textbf{Logistics Officer School Bern}}
-            \de{\textbf{Logistik Offiziersschule Bern}} \\
-            & \en{Platoon leader of 5 sergeants and 28 recruits}
-            \de{Führung und Ausbildung von 33 Unterstellten}\\
-            & \smallspace
-
-        10/2017 - 03/2018
-            & \en{\textbf{NBC Defence Sergeant School Spiez}}
-            \de{\textbf{ABC Abwehr Unteroffiziersschule Spiez}} \\
-            & \smallspace
-
-        07/2017 - 10/2017
-            & \en{\textbf{NBC Decontamination Soldier and Driver C1}}
-            \de{\textbf{ABC Dekontaminationssoldat und Fahrer C1}} \\
+        04/1818 - 08/1826
+            & \textbf{State of Hanover} \\
+            & Geodesic survey of Hanover \\
+            & Triangulation of the entire state \\
+            & Invented heliotrope to simplify measurements \\ 
             & \largespace
 
-        & \titlefont{\en{Qualifications}\de{Zertifikate}} \\ \hline \mediumspace
+        & \titlefont{Publications} \\ \hline \mediumspace
 
-        02/2020     & \en{\textbf{Cambridge C2 Proficiency English (Grade: A)}}
-                    \de{\textbf{Cambridge C2 Proficiency English (Note: A)}} \\
-        07/2019     & \en{\textbf{GRE General Test (V: 157, Q: 167, AW: 5.5)}}
-                    \de{\textbf{GRE General Test (V: 157, Q: 167, AW: 5.5)}} \\
-        09/2018     & \en{\textbf{SVF Leadership Certificate}}
-                    \de{\textbf{SVF Leadership Zertifikat}} \\
+        [1]
+            & whatever \\
+            & \largespace
+
+        & \titlefont{Qualifications} \\ \hline \mediumspace
+
+        02/2020     & \textbf{Cambridge C2 Proficiency English (Grade: A)} \\
+        07/2019     & \textbf{GRE General Test (V: 157, Q: 167, AW: 5.5)}\\
+        09/2018     & \textbf{SVF Leadership Certificate} \\
                     & \largespace
 
-        & \titlefont{\en{Computational Skills}\de{IT-Kenntnisse}} \\ \hline \mediumspace
+        & \titlefont{Computational Skills} \\ \hline \mediumspace
 
-            \textbf{\en{Programming}\de{Programmierung}}
-                & \en{Proficient}\de{Experte}: Python, C\texttt{++}, \LaTeX \\
-                & \en{Advanced}\de{Fortgeschritten}: C, R, MATLAB \\
+            \textbf{Programming}
+                & Proficient: Python, C\texttt{++}, \LaTeX \\
+                & Advanced: C, R, MATLAB \\
 
             \textbf{Software}
-                & \en{Proficient}\de{Experte}: Git, Microsoft Office, GIMP \\
-                & \en{Advanced}\de{Fortgeschritten}: Blender, Inkscape, Photoshop \\
+                & Proficient: Git, Microsoft Office, GIMP \\
+                & Advanced: Blender, Inkscape, Photoshop \\
                 & \largespace
 
-        & \titlefont{\en{Extracurricular Activities}\de{Freizeitaktivitäten}} \\ \hline \mediumspace
+        & \titlefont{Extracurricular Activities} \\ \hline \mediumspace
 
-            \en{Since}\de{Seit} 12/2014
-                & \textbf{Skiclub Zweisimmen}, \en{Alpine Skiing Coach}\de{Ski Alpin Trainer} \\
+           Since 12/2014
+                & \textbf{Skiclub Zweisimmen}, Alpine Skiing Coach \\
                 & \largespace
 
         & \titlefont{Hobbies} \\ \hline \mediumspace
-            & \en{Sports (Skiing, Running, Gymnastics)}
-            \de{Sport (Skifahren, Running)} \\
-            & \en{Graphic Design (Infographics, 3D-Models)}
-            \de{Graphic Design (Infographiken, 3D-Modelle)} \\
-            & \en{Reading (History, Classics, Anthropology)}
-            \de{Lesen (Geschichte, Klassiker, Philosophie)}
+            & Russian literature
 
     \end{tabular}
 }

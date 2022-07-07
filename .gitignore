@@ -1,3 +1,6 @@
+## Custom ignores
+graphics/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
