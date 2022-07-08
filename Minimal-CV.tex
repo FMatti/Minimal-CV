@@ -6,8 +6,21 @@
 % Color package
 \usepackage{xcolor}
 
-% Color definitions
-\definecolor{minimal-gray}{HTML}{f2f2f2}
+% Color scheme definitions
+%\definecolor{minimal-main}{HTML}{131313}
+%\definecolor{minimal-light}{HTML}{F2F2F2}
+%\definecolor{minimal-contrast}{HTML}{F3F2F5}
+%\definecolor{minimal-main}{HTML}{132747}
+%\definecolor{minimal-light}{HTML}{e8f2fa}
+%\definecolor{minimal-contrast}{HTML}{F3F2F5}
+%\definecolor{minimal-main}{HTML}{0c2b0e}
+%\definecolor{minimal-light}{HTML}{ebf2eb}
+%\definecolor{minimal-contrast}{HTML}{F3F2F5}
+\definecolor{minimal-main}{HTML}{3b0101}
+\definecolor{minimal-light}{HTML}{f5e8e4}
+\definecolor{minimal-contrast}{HTML}{F3F2F5}
+
+% Additional color definitions
 \definecolor{minimal-black}{HTML}{131313}
 \definecolor{minimal-white}{HTML}{F3F2F5}
 \definecolor{minimal-red}{HTML}{C43C2D}
@@ -49,29 +62,29 @@
 %  <------------> <---------------------------->
 %  _____________________________________________
 % |#############################################| ^
-% |#######  #  # #  ## # #  #  #     # #########| |
-% |####### # # # # # # # # # # # ### # #########| | headboxheight
-% |####### ### # # ##  # # ### # # # #   #######| |
+% |#############################################| |
+% |################## HEADBOX ##################| | headboxheight
+% |#############################################| |
 % |#############################################| v
 % |///////////////                              | ^
 % |///////////////                              | |
 % |///////////////                              | |
 % |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | | mainboxheight
-% |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | |
-% |///////////////                              | |
+% |////   ////////                              | |
+% |//// S ////////              M               | |
+% |//// I ////////              A               | |
+% |//// D ////////              I               | |
+% |//// E ////////              N               | | mainboxheight
+% |//// B ////////              B               | |
+% |//// O ////////              O               | |
+% |//// X ////////              X               | |
+% |////   ////////                              | |
 % |///////////////                              | |
 % |///////////////                              | |
 % |///////////////                              | |
 % |///////////////                              | v
 % |#############################################| ^
-% |#############################################| | footboxheight
+% |################## FOOTBOX ##################| | footboxheight
 % |#############################################| v
 
 
@@ -117,7 +130,7 @@
 % -- Headbox
 
 \posterbox[
-    colback=minimal-black,
+    colback=minimal-main,
     halign=center]
     {name=headbox,
     span=1,
@@ -141,7 +154,7 @@
 % -- Sidebox
 
 \posterbox[
-    colback=minimal-gray,
+    colback=minimal-light,
     valign=top,
     top=\inboxspacing,
     halign=right,
@@ -155,9 +168,11 @@
 
     \begin{tabular}{rl}
 
-        \multicolumn{2}{@{}c@{}}{\scalebox{0.25}{\input{images/image.tex}}} \\ \mediumspace
+        \multicolumn{2}{@{}c@{}}{\scalebox{0.25}{\input{images/image.tex}}} \\
+        \mediumspace
 
-        & \titlefont{Contact} \\ \hline \mediumspace
+        & \titlefont{Contact} \\
+        \hline \mediumspace
 
         \multirow{4}{*}{\scalebox{0.075}{\input{icons/address.tex}}}
             & \textbf{Address} \\
@@ -175,7 +190,8 @@
                 & \href{mailto:carl.gauss@uni-goe.de}{carl.gauss@uni-goe.de} \\
                 & \largespace
 
-        & \titlefont{Personal} \\ \hline \mediumspace
+        & \titlefont{Personal} \\
+        \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/birthday.tex}}}
             & \textbf{Date of Birth} \\
@@ -184,22 +200,24 @@
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/nationality.tex}}}
             & \textbf{Nationality} \\
-                & German \\
+                & Holy Roman Empire \\
                 & \largespace
 
-        & \titlefont{Platforms} \\ \hline \mediumspace
+        & \titlefont{Platforms} \\
+        \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/github.tex}}}
             & \textbf{GitHub} \\
-                & \href{https://github.com/CFGauss}{CFGauss} \\
+                & \href{https://youtu.be/dQw4w9WgXcQ}{CFGauss} \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{icons/linkedin.tex}}}
             & \textbf{LinkedIn} \\
-                & \href{https://ch.linkedin.com/in/carl-friedrich-gauss}{Carl Gauss} \\
+                & \href{https://youtu.be/dQw4w9WgXcQ}{Carl Friedrich Gauss} \\
                 & \largespace
 
-        & \titlefont{Languages} \\ \hline \mediumspace
+        & \titlefont{Languages} \\
+        \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{flags/germany.tex}}}
             & \textbf{German} \\
@@ -234,37 +252,38 @@
     rowspan=\mainboxheight}
 {
 
-    \color{minimal-black}
-
     \begin{tabular}{>{\footnotesize}rl}
 
-        & \titlefont{Education} \\ \hline \mediumspace
+        & \titlefont{Education} \\
+        \hline \mediumspace
 
         02/1798 - 09/1799
             & \textbf{University of Helmstedt} \\
             & Doctoral dissertation \\
-            & Discussion of fundamental theorem of algebra \\
+            & Topic: Fundamental theorem of algebra \\
+            & Advisor: Johann Friedrich Pfaff \\
             & \smallspace
 
         04/1795 - 02/1798
             & \textbf{University of Göttingen} \\
-            & Study of Mathematics \\
+            & Study of mathematics \\
             & Construction of regular 17-gon (ruler/compass) \\
             & \smallspace
 
         04/1788 - 04/1795
             & \textbf{Gymnasium Brunswick}\\
-            & High German and Latin \\
-            & Stipend from the Duke of Brunswick \\
-            & \smallspace
+            & Study of high German and Latin \\
+            & Stipend from the duke of Brunswick \\
+            & \largespace
 
-        & \titlefont{Work Expericence} \\ \hline \mediumspace
+        & \titlefont{Work Expericence} \\
+        \hline \mediumspace
 
         Since 02/1807
             & \textbf{Astronomical Observatory in Göttingen} \\
             & Full professor of astronomy \\
             & Director of the observatory \\
-            & \largespace
+            & \smallspace
 
         04/1818 - 08/1826
             & \textbf{State of Hanover} \\
@@ -273,38 +292,49 @@
             & Invented heliotrope to simplify measurements \\ 
             & \largespace
 
-        & \titlefont{Publications} \\ \hline \mediumspace
-
-        [1]
-            & whatever \\
+        & \titlefont{Selected Publications} \\
+        \hline \mediumspace
+        1832
+            & \textbf{The Intensity of the Earth's Magnetic Force} \\
+        1827
+            & \textbf{General Investigations of Curved Surfaces} \\
+        1809
+            & \textbf{Theory of the Motion of the Heavenly Bodies} \\
+        1801
+            & \textbf{Arithmetical Investigations} \\
             & \largespace
 
-        & \titlefont{Qualifications} \\ \hline \mediumspace
+        & \titlefont{Awards} \\
+        \hline \mediumspace
 
-        02/2020     & \textbf{Cambridge C2 Proficiency English (Grade: A)} \\
-        07/2019     & \textbf{GRE General Test (V: 157, Q: 167, AW: 5.5)}\\
-        09/2018     & \textbf{SVF Leadership Certificate} \\
-                    & \largespace
+        1838
+            & \textbf{Copley Medal} \\
+        1809
+            & \textbf{Lalande Prize} \\
+            & \largespace
 
-        & \titlefont{Computational Skills} \\ \hline \mediumspace
-
-            \textbf{Programming}
-                & Proficient: Python, C\texttt{++}, \LaTeX \\
-                & Advanced: C, R, MATLAB \\
-
-            \textbf{Software}
-                & Proficient: Git, Microsoft Office, GIMP \\
-                & Advanced: Blender, Inkscape, Photoshop \\
+        & \titlefont{Memberships} \\
+            \hline \mediumspace
+            1853
+                & \textbf{American Philosophical Society} \\
+                & Elected member \\
+            1845
+                & \textbf{Royal Institute of the Netherlands} \\
+                & Associated member \\
+            1822
+                & \textbf{American Academy of Arts and Sciences} \\
+                & Foreign honorary member \\
+            1821
+                & \textbf{Royal Swedish Academy of Sciences} \\
+                & Foreign member \\
                 & \largespace
 
-        & \titlefont{Extracurricular Activities} \\ \hline \mediumspace
-
-           Since 12/2014
-                & \textbf{Skiclub Zweisimmen}, Alpine Skiing Coach \\
-                & \largespace
-
-        & \titlefont{Hobbies} \\ \hline \mediumspace
-            & Russian literature
+        & \titlefont{Hobbies} \\
+        \hline \mediumspace
+            & Astronomical observations and measurements \\
+            & Investigation of prime number distribution \\
+            & Observation of Earth's magnetic field \\
+            & Philology and Russian literature
 
     \end{tabular}
 }
@@ -312,7 +342,7 @@
 
 % -- Footbox
 
-\posterbox[colback=minimal-black]
+\posterbox[colback=minimal-main]
            {name=blankbox2,
            below=sidebar,
            column=1,
