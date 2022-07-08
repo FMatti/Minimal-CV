@@ -28,6 +28,8 @@ Some of the main features that characterize this template are the
     pdflatex Minimal-CV.tex
 
 ## Closing words
+The template is dedicated (in honor and mockery) to the one and only Carl Friedrich Gauss whose work and mentality has never failed to inspire me on my academic journey throughout the last couple of years.
+
 Suggestions for expanding the set of icons and flags are always welcome.
 
 Finally, make sure to let me know if this template helped you land a job.
