@@ -4,6 +4,8 @@
 # Minimal-CV
 Minimal template for typesetting a curriculum vitae (CV) in LaTeX.
 
+![minimal-cv](https://github.com/FMatti/Minimal-CV/assets/79205741/4f88d162-41ad-4b10-9b1c-fd8c6433d232)
+
 ## Introduction
 Motivated by a friend's request I make the source for the CV that has assisted me more (or less) on my journey in the last few years. I was inspired by recent trends of modularizing and condensing CVs onto a single A4 page. My aim was to keep the code as simple as possible and only as customizable as necessary, hence why I call it 'Minimal'.
 
@@ -26,7 +28,7 @@ A small set of flags can be used to make your language competences visible at a 
 Custom color schemes can be quite easily added to the default design to personalize the CV.
 | Default | Blue | Green | Red |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/79205741/177964429-b8d3634d-b384-4976-8e4b-f6e252c19be2.png)  | ![](https://user-images.githubusercontent.com/79205741/177965026-3fe149b4-61c6-4876-af88-89a47cae1f43.png)  | ![](https://user-images.githubusercontent.com/79205741/177965060-29f6c45e-3cf2-4a02-af03-7d7dbd3f0ef2.png)  | ![](https://user-images.githubusercontent.com/79205741/177965096-d74e680b-86fd-49d0-9de6-a9cab76b944a.png)
+![minimal-cv-black](https://github.com/FMatti/Minimal-CV/assets/79205741/2270e68f-8f2a-4e4f-9f6a-1e82de8c57ad) | ![minimal-cv-blue](https://github.com/FMatti/Minimal-CV/assets/79205741/5c48a543-455c-4a5a-b0a9-640c94fb53ff) | ![minimal-cv-green](https://github.com/FMatti/Minimal-CV/assets/79205741/ce27e5c8-3c7c-4225-badc-e617dee9909e) | ![minimal-cv-red](https://github.com/FMatti/Minimal-CV/assets/79205741/6806cf3c-dde8-4755-90a5-1f09d44a7681)
 
 ## Usage
 To build a pdf version of the CV simply run the following commands:
