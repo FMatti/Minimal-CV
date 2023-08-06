@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+
+    % Clip mask
+    \clip (0, 0) circle (7);
+
+    % Red
+    \fill[minimal-red] (-7, -7) rectangle (7, 7);
+
+    % Star
+    \begin{scope}[shift={(-2.75, 2.25)}, scale=2.5]
+        \fill[minimal-yellow] (0, 1) to (-0.235, 0.324) to (-0.951, 0.309) to (-0.380, -0.124) to (-0.588, -0.809) to (0, -0.4) to (0.588, -0.809) to (0.380, -0.124) to (0.951, 0.309) to (0.235, 0.324) to cycle;
+    \end{scope}
+
+    \begin{scope}[shift={(1, 5)}, scale=0.75, rotate=35]
+        \fill[minimal-yellow] (0, 1) to (-0.235, 0.324) to (-0.951, 0.309) to (-0.380, -0.124) to (-0.588, -0.809) to (0, -0.4) to (0.588, -0.809) to (0.380, -0.124) to (0.951, 0.309) to (0.235, 0.324) to cycle;
+    \end{scope}
+
+    \begin{scope}[shift={(2.25, 3.25)}, scale=0.75, rotate=5]
+        \fill[minimal-yellow] (0, 1) to (-0.235, 0.324) to (-0.951, 0.309) to (-0.380, -0.124) to (-0.588, -0.809) to (0, -0.4) to (0.588, -0.809) to (0.380, -0.124) to (0.951, 0.309) to (0.235, 0.324) to cycle;
+    \end{scope}
+
+    \begin{scope}[shift={(2.25, 1.25)}, scale=0.75, rotate=5]
+        \fill[minimal-yellow] (0, 1) to (-0.235, 0.324) to (-0.951, 0.309) to (-0.380, -0.124) to (-0.588, -0.809) to (0, -0.4) to (0.588, -0.809) to (0.380, -0.124) to (0.951, 0.309) to (0.235, 0.324) to cycle;
+    \end{scope}
+
+    \begin{scope}[shift={(1, -0.5)}, scale=0.75, rotate=35]
+        \fill[minimal-yellow] (0, 1) to (-0.235, 0.324) to (-0.951, 0.309) to (-0.380, -0.124) to (-0.588, -0.809) to (0, -0.4) to (0.588, -0.809) to (0.380, -0.124) to (0.951, 0.309) to (0.235, 0.324) to cycle;
+    \end{scope}
+
+\end{tikzpicture}
